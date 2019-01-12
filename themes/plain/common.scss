@@ -364,6 +364,61 @@ ul.side-list {
   }
 }
 
+.chains {
+  position: fixed;
+  right: 0;
+  top: -100%;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(103, 183, 232, 0.55);
+  padding: 18px 20px 10px;
+  overflow: hidden;
+  transition: all .25s ease-in;
+  font-family: "Roboto Mono", Monaco, courier, monospace;
+
+  &:before {
+    position: fixed;
+    content: 'Links';
+    color: #39393a;
+    top: 0;
+    right: 0;
+    display: block;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+  }
+
+  &:hover {
+    top: 0;
+
+    &:before {
+      opacity: 0;
+    }
+  }
+
+  a {
+    display: flex;
+    color: #5e6d82;
+    text-align: right;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    font-family: Rajdhani, Helvetica;
+    transition: all .15s ease-in-out;
+
+    &:hover {
+      &:before {
+        content: '-> ';
+        color: #67b7e8;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
 
 .loading-indicator {
   position: fixed;
