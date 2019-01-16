@@ -1,0 +1,144 @@
+$font = 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif
+$link_color = #4078c0
+$font-size = 16px
+$title-size = 27px
+
+html, body
+  margin: 0
+  padding: 0
+  min-height: 100vh
+
+body
+  font-family: $font
+  font-weight: 400
+  overflow-x: hidden
+  overflow-y: hidden
+  -webkit-font-smoothing: antialiased
+  -webkit-tap-highlight-color: transparent
+
+a
+  color: $link_color
+  text-decoration: none
+
+*, *::before, *::after
+  box-sizing: border-box
+
+p
+  margin: 5px 0
+
+div, ul, ol, li
+  margin: 0
+  padding: 0
+  border: 0
+
+ul, li
+  list-style: none
+
+code
+  border: 0
+  border-radius: 3px
+  padding: 2px 6px
+  color: #252a2f
+  background: #F3F4F4
+  line-height: 1.5
+  font-size: 85%
+
+pre   
+  display: block 
+  background: #F7F7F7 
+  overflow-x: auto 
+  padding: 15px 10px 
+
+  > code   
+    background: transparent 
+    border: 0 
+    display: block 
+
+table
+  display: block 
+  width: 100% 
+  overflow: auto 
+  margin: 10px 0 
+  border-spacing: 0 
+  border-collapse: collapse 
+  word-wrap: break-word 
+  line-height: 1.6 
+
+  tr   
+    background-color: #fff 
+    border-top: 1px solid #dadada 
+
+    &:nth-child(2n)   
+      background-color: #FAFAFA 
+     
+    th, td   
+      padding: 6px 12px 
+      border-right: 1px solid #dadada 
+      border-bottom: 1px solid #dadada 
+      text-align: left 
+      vertical-align: top 
+
+      &:first-child   
+        border-left: 1px solid #dadada 
+
+    th   
+      font-weight: 600 
+     
+    td   
+      color: #5a5e66 
+     
+button, input, select, textarea
+  font-family: inherit 
+  font-size: inherit 
+  line-height: inherit 
+  color: inherit 
+ 
+
+.hljs   
+  line-height: 1.8 
+  font-family: Menlo, Monaco, Consolas, Courier, monospace 
+  font-size: 12px 
+  padding: 12px 18px 
+  background: #f9fafc 
+  border: solid 1px #eaeefb 
+  margin-bottom: 20px 
+  border-radius: 4px 
+  -webkit-font-smoothing: auto 
+
+.main   
+  width: 100vw 
+  height: 100vh 
+ 
+h4, h5, h6, p   
+  line-height: 1.6 
+ 
+.container-position
+  h1   
+    font-size: $title-size
+    margin: 29px 0 20px 
+    line-height: 2 
+    border-bottom: 1px solid #e8ebef 
+   
+  h2   
+    font-size: 25px 
+    margin: 26px 0 20px 
+    line-height: 1.9 
+    border-bottom: 1px solid #e8ebef 
+   
+  h3   
+    font-size: 23px 
+    margin: 24px 0 18px 
+    line-height: 1.8 
+    font-weight: 700 
+   
+  h4   
+    font-size: 20px 
+    margin: 29px 0 19px 
+   
+  p   
+    font-size: $font-size
+    margin-top: 0 
+    margin-bottom: 12px 
+   
+ 
+
